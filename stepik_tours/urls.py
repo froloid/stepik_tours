@@ -21,11 +21,12 @@ from tours.views import tour_view
 from tours.views import custom_handler404
 from tours.views import custom_handler500
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_view),
-    path('departure', departure_view),
-    path('tour', tour_view)
+    path('departure/<str:dep_id>', departure_view),
+    path('tour/<int:tour_id>', tour_view)
 ]
 
 handler404 = custom_handler404

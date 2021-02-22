@@ -1,3 +1,6 @@
+#debug files
+test.py
+
 # Application config
 app/config.py
 
